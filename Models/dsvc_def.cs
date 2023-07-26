@@ -1,0 +1,131 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Micros3700Models.Models
+{
+    public class dsvc_def
+    {
+        public int dsvc_seq { get; set; }
+        public int obj_num { get; set; }
+        public string name { get; set; }
+        public string type { get; set; }
+        public short? cat { get; set; }
+        public string ob_dsc01_assume_entire_amt { get; set; }
+        public string ob_svc01_post_to_cov_cnt { get; set; }
+        public string ob_dsvc02_preset { get; set; }
+        public string ob_dsvc03_amt { get; set; }
+        public string ob_dsc04_affect_auto_svc { get; set; }
+        public string ob_svc04_add_to_tip_svc_chg { get; set; }
+        public string ob_dsvc05_ref_req { get; set; }
+        public string ob_dsvc06_validation_req { get; set; }
+        public string ob_dsc17_emp_meal { get; set; }
+        public string ob_svc17_chg_tip { get; set; }
+        public string ob_dsc18_limit_dsc { get; set; }
+        public string ob_svc18_add_to_tips_paid { get; set; }
+        public string ob_dsc19_item_dsc { get; set; }
+        public string ob_svc19_use_pct_of_tip { get; set; }
+        public string ob_dsvc20_reset_itmzrs_Flag { get; set; }
+        public string ob_dsc25_prn_trailer { get; set; }
+        public string ob_svc25_cc_posting { get; set; }
+        public string ob_dsc26_tax_on_calculated { get; set; }
+        public string ob_dsc27_dont_filter { get; set; }
+        public string ob_dsc28_dsc_amt_over { get; set; }
+        public string ob_dsc29_single_seat_only { get; set; }
+        public string ob_svc_taiwan_paid_out { get; set; }
+        public string ob_dsc_prorate_sttl_dsc { get; set; }
+        public string apply_to_dsvc_itmzr_01 { get; set; }
+        public string apply_to_dsvc_itmzr_02 { get; set; }
+        public string apply_to_dsvc_itmzr_03 { get; set; }
+        public string apply_to_dsvc_itmzr_04 { get; set; }
+        public string apply_to_dsvc_itmzr_05 { get; set; }
+        public string apply_to_dsvc_itmzr_06 { get; set; }
+        public string apply_to_dsvc_itmzr_07 { get; set; }
+        public string apply_to_dsvc_itmzr_08 { get; set; }
+        public string ob_item_shareable { get; set; }
+        public string ob_is_cashback_nrsc { get; set; }
+        public string ob_rsvd01 { get; set; }
+        public string ob_rsvd02 { get; set; }
+        public string ob_rsvd03 { get; set; }
+        public string ob_rsvd04 { get; set; }
+        public string ob_svc_post_to_emp_tips { get; set; }
+        public short priv_lvl { get; set; }
+        public int? tax_class_seq { get; set; }
+        public int? mlvl_class_seq { get; set; }
+        public int? prn_def_class_seq { get; set; }
+        public int? tips_paid_tmed_seq { get; set; }
+        public int? dsvc_slu_seq { get; set; }
+        public short? nlu_num { get; set; }
+        public int? key_num { get; set; }
+        public short? icon_id { get; set; }
+        public decimal? amt { get; set; }
+        public decimal? percentage { get; set; }
+        public DateTime? effective_from { get; set; }
+        public DateTime? effective_to { get; set; }
+        public int? last_updated_by { get; set; }
+        public DateTime? last_updated_date { get; set; }
+        public string ob_svc_do_not_post { get; set; }
+        public string ob_override_combo_discount { get; set; }
+        public string ob_touch_item { get; set; }
+        public string ob_limit_enable { get; set; }
+        public string ob_limit_by_check { get; set; }
+        public string ob_limit_all { get; set; }
+        public string ob_disc_depleted_amount { get; set; }
+        public decimal? min_percent { get; set; }
+        public decimal? max_percent { get; set; }
+        public decimal? min_amount { get; set; }
+        public decimal? max_amount { get; set; }
+        public string ob_till_required { get; set; }
+        public string ob_rpt_as_sttl_dsc { get; set; }
+        public int? external_type { get; set; }
+        public string ob_forgive_cover { get; set; }
+        public string ob_limit_by_seat { get; set; }
+        public string ob_limit_by_item { get; set; }
+        public short activation_type { get; set; }
+        public short? rule_type { get; set; }
+        public short? priority { get; set; }
+        public int? period_seq { get; set; }
+        public int? period2_seq { get; set; }
+        public int? period3_seq { get; set; }
+        public int? period4_seq { get; set; }
+        public int? trigger_mi_set1_seq { get; set; }
+        public int? trigger_mi_set2_seq { get; set; }
+        public int? trigger_mi_set3_seq { get; set; }
+        public int? trigger_mi_set4_seq { get; set; }
+        public int? trigger_quantity { get; set; }
+        public decimal? trigger_total { get; set; }
+        public int? award_mi_set_seq { get; set; }
+        public short? award_type { get; set; }
+        public int? award_count { get; set; }
+        public int? award_max_count { get; set; }
+        public string ob_dsc_sub_from_menu_item_price { get; set; }
+        public string ob_dsc_is_final { get; set; }
+        public int? item_excl_mask { get; set; }
+        public int? trans_excl_mask { get; set; }
+        public string ob_auto_dsc_same_seat { get; set; }
+        public int? itmzr_mask_1_32 { get; set; }
+        public int? itmzr_mask_33_64 { get; set; }
+        public int? itmzr_mask_65_96 { get; set; }
+        public short? consolidation_group { get; set; }
+        public short constraint_type { get; set; }
+        public string ob_require_trigger_select { get; set; }
+        public int? participant_mask { get; set; }
+        public string cross_ref1 { get; set; }
+        public string cross_ref2 { get; set; }
+        public string ob_prn_multiple_gst_chks { get; set; }
+        public string ob_prompt_prn_multi_gst_chks { get; set; }
+        public string ob_grp_by_dsc_print_format { get; set; }
+        public string ob_amt_off_of_trigger_ttl { get; set; }
+        public int? trigger_mi_set5_seq { get; set; }
+        public int? trigger_mi_set6_seq { get; set; }
+        public int? trigger_mi_set7_seq { get; set; }
+        public int? trigger_mi_set8_seq { get; set; }
+        public string ob_apply_to_combo_meal_savings { get; set; }
+        public int? effective_grace_period_start { get; set; }
+        public int? effective_grace_period_end { get; set; }
+        public string ob_svc_post_on_finalize { get; set; }
+        public string ob_svc_dont_post_tips_ttls { get; set; }
+    }
+}
