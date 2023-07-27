@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Micros3700Models.Models
 {
-    public class acct_class_def
+    public class acct_class_def 
     {
         public int acct_class_seq { get; set; }
         public string acct_class_desc { get; set; }
