@@ -1,6 +1,4 @@
-﻿# Markdown File
-
-## Overview
+﻿## Overview
 
 The micros 3700 database has a total of 950 tables, some of which have been removed. I have created these tables into C # entities for easy use.
 
